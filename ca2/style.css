@@ -1,0 +1,111 @@
+
+/* Overall page */
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #ff2020;
+    border-radius: 10px;
+}
+
+/* Navigation links */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ff4040;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Content sections */
+section {
+    background-color: #151515;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 4px solid #e50914;
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #ff3030;
+}
+
+/* Course and material cards */
+article {
+    background-color: #202020;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #383838;
+    border-radius: 8px;
+}
+
+/* Forms and input fields */
+input, textarea, select {
+    background-color: #252525;
+    color: white;
+    border: 1px solid #555555;
+    padding: 9px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #ff3030;
+}
+
+/* Buttons */
+button {
+    background-color: #d90000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff3030;
+}
+
+/* Horizontal separators */
+hr {
+    border: none;
+    border-top: 1px solid #444444;
+    margin: 25px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #171717;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #ff2020;
+    border-radius: 8px;
+}
+
+/* Checkbox spacing */
+input[type="checkbox"] {
+    accent-color: #ff2020;
+}

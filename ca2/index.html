@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Material Management Platform</title>
+</head>
+<body>
+
+    <header>
+        <h1>CourseVault</h1>
+        <p>Version-Aware Platform for Managing Course Teaching Materials</p>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a> |
+            <a href="#courses">Course Folders</a> |
+            <a href="#materials">All Materials</a> |
+            <a href="#archive">Archive and Restore</a> |
+            <a href="#activity">Activity History</a> |
+            <a href="#access">Access Controls</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Dashboard -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Manage and organize all your teaching materials.</p>
+
+            <ul>
+                <li>Total Courses: 4</li>
+                <li>Total Teaching Files: 3</li>
+                <li>Total Versions: 6</li>
+                <li>Archived Files: 1</li>
+            </ul>
+
+            <button type="button">Upload Material</button>
+        </section>
+
+        <hr>
+
+        <!-- Course Folders -->
+        <section id="courses">
+            <h2>Course Folders</h2>
+
+            <article>
+                <h3>Python Programming</h3>
+                <p>Course Code: CSE101</p>
+                <p>Contains lecture notes, practicals, and assignments.</p>
+                <button type="button">View Materials</button>
+            </article>
+
+            <article>
+                <h3>Mathematics</h3>
+                <p>Course Code: MTH165</p>
+                <p>Contains calculus, matrices, and practice sheets.</p>
+                <button type="button">View Materials</button>
+            </article>
+
+            <article>
+                <h3>Computer Networks</h3>
+                <p>Course Code: CSE204</p>
+                <p>Contains networking lectures and lab resources.</p>
+                <button type="button">View Materials</button>
+            </article>
+
+            <article>
+                <h3>Digital Electronics</h3>
+                <p>Course Code: ECE110</p>
+                <p>Contains logic gates, circuits, and reference notes.</p>
+                <button type="button">View Materials</button>
+            </article>
+
+            <h3>Create New Course Folder</h3>
+            <form>
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName" required>
+                <br><br>
+
+                <label for="courseCode">Course Code:</label>
+                <input type="text" id="courseCode" name="courseCode">
+                <br><br>
+
+                <label for="courseDescription">Description:</label>
+                <textarea id="courseDescription" name="courseDescription"></textarea>
+                <br><br>
+
+                <button type="submit">Create Course</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Upload Teaching Materials -->
+        <section id="upload">
+            <h2>Upload Teaching Material</h2>
+
+            <form>
+                <label for="file">Choose File:</label>
+                <input type="file" id="file" name="file" required>
+                <br><br>
+
+                <label for="uploadCourse">Select Course:</label>
+                <select id="uploadCourse" name="uploadCourse" required>
+                    <option value="">Select a course</option>
+                    <option value="CSE101">Python Programming</option>
+                    <option value="MTH165">Mathematics</option>
+                    <option value="CSE204">Computer Networks</option>
+                    <option value="ECE110">Digital Electronics</option>
+                </select>
+                <br><br>
+
+                <label for="changeNotes">Change Notes:</label>
+                <textarea id="changeNotes" name="changeNotes"
+                    placeholder="Describe the changes in this version"></textarea>
+                <br><br>
+
+                <label for="activeVersion">Mark as Active Version:</label>
+                <input type="checkbox" id="activeVersion" name="activeVersion">
+                <br><br>
+
+                <button type="submit">Upload Material</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- All Materials and Search -->
+        <section id="materials">
+            <h2>All Teaching Materials</h2>
+
+            <form>
+                <label for="search">Search Materials:</label>
+                <input type="search" id="search" name="search"
+                    placeholder="Search files or courses">
+
+                <label for="filterCourse">Filter by Course:</label>
+                <select id="filterCourse" name="filterCourse">
+                    <option value="">All Courses</option>
+                    <option value="CSE101">Python Programming</option>
+                    <option value="MTH165">Mathematics</option>
+                    <option value="CSE204">Computer Networks</option>
+                    <option value="ECE110">Digital Electronics</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+
+            <article>
+                <h3>Python_Unit_1.pdf</h3>
+                <p>Course: Python Programming</p>
+                <p>File Size: 1.2 MB</p>
+                <p>Active Version: Version 2</p>
+                <p>Status: Active</p>
+                <button type="button">View Version History</button>
+                <button type="button">Upload New Version</button>
+                <button type="button">Archive</button>
+            </article>
+
+            <article>
+                <h3>Matrices_Notes.pdf</h3>
+                <p>Course: Mathematics</p>
+                <p>File Size: 860 KB</p>
+                <p>Active Version: Version 1</p>
+                <p>Status: Active</p>
+                <button type="button">View Version History</button>
+                <button type="button">Upload New Version</button>
+                <button type="button">Archive</button>
+            </article>
+
+            <article>
+                <h3>OSI_Model.pptx</h3>
+                <p>Course: Computer Networks</p>
+                <p>File Size: 2.4 MB</p>
+                <p>Active Version: Version 2</p>
+                <p>Status: Active</p>
+                <button type="button">View Version History</button>
+                <button type="button">Upload New Version</button>
+                <button type="button">Archive</button>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Version History -->
+        <section id="version-history">
+            <h2>Version History</h2>
+
+            <article>
+                <h3>Python_Unit_1.pdf</h3>
+
+                <ol>
+                    <li>
+                        <h4>Version 2 - Active</h4>
+                        <p>Date: 26 October 2026</p>
+                        <p>Change Notes: Added examples and practice questions.</p>
+                    </li>
+
+                    <li>
+                        <h4>Version 1 - Previous Version</h4>
+                        <p>Date: 20 October 2026</p>
+                        <p>Change Notes: Initial lecture notes.</p>
+                        <button type="button">Restore as Active Version</button>
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Archive and Restore -->
+        <section id="archive">
+            <h2>Archive and Restore</h2>
+
+            <article>
+                <h3>Logic_Gates.pdf</h3>
+                <p>Course: Digital Electronics</p>
+                <p>Status: Archived</p>
+                <button type="button">Restore Material</button>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Activity History -->
+        <section id="activity">
+            <h2>Activity History</h2>
+
+            <ul>
+                <li>Python_Unit_1.pdf updated to Version 2.</li>
+                <li>OSI_Model.pptx updated to Version 2.</li>
+                <li>Logic_Gates.pdf moved to archive.</li>
+                <li>Matrices_Notes.pdf uploaded.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Access Controls -->
+        <section id="access">
+            <h2>Access Controls</h2>
+
+            <form>
+                <label for="userRole">Select User Role:</label>
+                <select id="userRole" name="userRole">
+                    <option value="admin">Administrator</option>
+                    <option value="editor">Editor</option>
+                    <option value="viewer">Viewer</option>
+                </select>
+                <br><br>
+
+                <h3>Permissions</h3>
+
+                <label>
+                    <input type="checkbox" name="view" checked>
+                    View Teaching Materials
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="upload">
+                    Upload Files
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="version">
+                    Manage Versions
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="archive">
+                    Archive and Restore Files
+                </label>
+                <br><br>
+
+                <button type="submit">Save Permissions</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>CourseVault - Version-Aware Teaching Material Management Platform</p>
+        <p>Organize courses, track revisions, and manage teaching resources.</p>
+    </footer>
+
+</body>
+</html>
