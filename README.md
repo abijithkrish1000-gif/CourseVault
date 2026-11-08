@@ -65,3 +65,4 @@ It also provides a practical example of organizing educational resources through
 ## 📜 License
 
 This project was developed for educational purposes.
+The youtube video link about the website : https://youtu.be/prJ_8DNn6G4?si=Hat5qsr6cdJNH_98
